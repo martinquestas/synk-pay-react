@@ -1,0 +1,40 @@
+.footer-container{
+  background-color: transparent;
+}
+
+footer {
+  flex-shrink: 0;
+  display: table;
+  margin: 0px auto 0px auto;
+  background-color: transparent;
+}
+
+footer .copyright {
+  color: #c5c5c5;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Prompt", sans-serif;
+  margin-top: -90px;
+}
+
+a.hyperlink{
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+a.hyperlink:hover{
+  text-decoration: none;
+  color: rgb(160, 84, 22);
+
+}
+
+
+footer .copyright p {
+  font-family: "Prompt";
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
