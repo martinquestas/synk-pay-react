@@ -44,6 +44,6 @@
   color: #00adb5; /* Adjust hover color as needed */
 }
 
-.active {
+.nav-links .active {
   color: #00adb5; /* Active link color */
 }

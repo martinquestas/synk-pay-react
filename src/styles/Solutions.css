@@ -1,0 +1,151 @@
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.solutions-main-wrapper {
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 110vh;
+  margin-top: -210px;
+}
+
+.solutions-header {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  animation: slide-up 1s ease-out forwards;
+}
+
+.solutions-header h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.solutions-header p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 150px;
+  width: 640px;
+}
+
+.solutions-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.solutions-item {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  max-width: 90vw;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  animation: fade-in 1s ease-out forwards;
+}
+.image-container-movedup {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  animation: fade-in 3s ease-out forwards;
+}
+.image-container-behind {
+  position: relative;
+  width: 100%;
+  height: auto;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.image-container img:first-child {
+  width: 100%;
+  height: auto;
+  animation: fade-in 3s ease-out forwards;
+}
+.image-container-behind img:first-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: auto;
+  margin-top: -50px;
+  animation: fade-in 3s ease-out forwards;
+}
+.image-container-movedup img:first-child {
+  width: 100%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+.image-container .overlay-image {
+  position: absolute;
+  top: 41%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  max-width: 30%;
+  height: auto;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.image-container-behind .overlay-image-behind {
+  width: 60%;
+  height: auto;
+  margin-bottom: 100px;
+
+}
+
+.image-container-movedup .overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 25%;
+  height: auto;
+  margin-top: -100px;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.solutions-item h3 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-top: 20px;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.solutions-item p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  margin-bottom: 200px;
+  animation: fade-in 1s ease-out forwards;
+}

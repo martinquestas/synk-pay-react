@@ -9,6 +9,15 @@ import "slick-carousel/slick/slick-theme.css";
 const Home = () => {
   return (
     <div className="home-main-wrapper">
+      <div className="home-image-wrapper">
+        {" "}
+        <img
+          src="static/images/Home/bg-home.png"
+          alt="Background"
+          className="home-background-image"
+        />
+      </div>
+
       <div className="home-page">
         <h2>Synchronise Your</h2>
         <h2>Business Finances</h2>
@@ -16,6 +25,18 @@ const Home = () => {
           Welcome to Synk Pay, where innovation meets security in digital
           finance.
         </p>{" "}
+      </div>
+      <div className="home-page-two">
+        <p>
+          Synk Pay empowers businesses to seamlessly manage cryptocurrency and
+          fiat funds. Harness the progressive regulatory framework of Lithuania
+          with our secure and intuitive platform, integrating digital and
+          traditional currencies into one comprehensive financial tool for
+          businesses worldwide.
+        </p>
+      </div>
+      <div className="home-page-three">
+        <p>Powered by Novatide Labs</p>
       </div>
     </div>
   );

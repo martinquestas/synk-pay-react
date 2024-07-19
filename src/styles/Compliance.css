@@ -1,0 +1,84 @@
+/* Compliance.css */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.compliance-main-wrapper {
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 110vh;
+    margin-top: -210px;
+  }
+  
+  .compliance-header {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    animation: slide-up 1s ease-out forwards;
+  }
+  
+  .compliance-header h2 {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+  }
+  
+  .compliance-header p {
+    font-family: "Karla", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 20px;
+    width: 600px;
+  }
+  
+  .compliance-content {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+  }
+  
+  .compliance-item {
+    text-align: center;
+    max-width: 350px;
+    animation: slide-up 1s ease-out forwards;
+  }
+  
+  .compliance-item img {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .compliance-item h3 {
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  .compliance-item p {
+    font-family: "Karla", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  

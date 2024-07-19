@@ -44,4 +44,5 @@ const CustomNavbar = () => {
     </div>
   );
 };
+
 export default CustomNavbar;

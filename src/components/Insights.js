@@ -26,7 +26,7 @@ const Insights = () => {
           <h3>Real-Time Tracking</h3>
           <p>Monitor your financial activities as they happen.</p>
         </div>
-        <div className="insights-item">
+        <div className="insights-item-two">
           <img
             src="static/images/insights/customizable-reports.png"
             alt="Customizable Reports"
@@ -34,7 +34,7 @@ const Insights = () => {
           <h3>Customizable Reports</h3>
           <p>Tailor reports to meet your specific needs.</p>
         </div>
-        <div className="insights-item">
+        <div className="insights-item-three">
           <img
             src="static/images/insights/predictive-analytics.png"
             alt="Predictive Analytics"

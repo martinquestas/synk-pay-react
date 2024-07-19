@@ -20,16 +20,13 @@ const Contact = () => {
       <div className="contact-details">
         <div className="contact-item">
           <h3>Location</h3>
-          <p>
-            Sherman,
-            <br /> Calle Wallaby 42, Sidney
-          </p>
+          <p>Sherman, Calle Wallaby 42, Sidney</p>
         </div>
-        <div className="contact-item">
+        <div className="contact-item-two">
           <h3>Email</h3>
           <p>email@email.com</p>
         </div>
-        <div className="contact-item">
+        <div className="contact-item-three">
           <h3>Phone number</h3>
           <p>+00 123 456 789</p>
         </div>

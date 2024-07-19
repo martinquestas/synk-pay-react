@@ -1,35 +1,127 @@
 /* Home.css */
 
-.home-main-wrapper {
-    background-image: url("../../public/static/images/Home/bg-home.png");
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    height: 110vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: -210px;
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
   }
-  
-  .home-page {
-    color: white;
-    text-align: center;
-    margin-top: -340px;
-    width: 500px;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .home-page h2{
-    font-family: "Karla", sans-serif;
-    font-weight: 600;
-    font-size: 44px;
-  }
+}
 
-  .home-page p{
-    margin-top: 30px;
-    font-family: "Karla", sans-serif;
-    font-weight: 300;
-    font-size: 27px;
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-main-wrapper {
+  position: relative;
+  background-color: black;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -210px;
+  overflow: hidden;
+}
+
+.home-image-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110vh;
+  z-index: 1; /* Ensures the image stays in the background */
+  opacity: 0; /* Initially hidden */
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 1.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-background-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+.home-page {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  width: 500px;
+  opacity: 0; /* Initially hidden */
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0s;
+  z-index: 3; /* Ensures the content stays above the background image */
+}
+
+.home-page h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.home-page p {
+  margin-top: 30px;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.home-page-two {
+  color: white;
+  text-align: center;
+  margin-top: 250px;
+  width: 800px;
+  opacity: 0; /* Initially hidden */
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.5s;
+  z-index: 1; /* Ensures the content stays above the background image */
+}
+
+.home-page-two h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.home-page-two p {
+  margin-top: 30px;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.home-page-three {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: -250px;
+  padding-bottom: 100px;
+  width: 300px;
+  opacity: 0; /* Initially hidden */
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.5s;
+  z-index: 1; /* Ensures the content stays above the background image */
+}
+
+.home-page-three p {
+  font-family: "Prompt";
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  color: #c5c5c5;
+}
+
