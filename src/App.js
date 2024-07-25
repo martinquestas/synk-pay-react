@@ -15,6 +15,18 @@ import Integration from "./components/Integration";
 import Insights from "./components/Insights";
 import Contact from "./components/Contact";
 import NavigationIndicator from "./components/NavigationIndicator";
+import { preloadImages } from "./utils/preloadImages";
+
+const imageUrls = [
+  "static/images/Integration/sub_2.png",
+  "static/images/Integration/sub_3.png",
+  "static/images/Security/sub1_1.png",
+  "static/images/Security/sub2_1.png",
+  "static/images/Security/sub3_1.png",
+  "static/images/Security/sub1_2.png",
+  "static/images/Security/sub2_2.png",
+  "static/images/Security/sub3_2.png",
+];
 
 function App() {
   const [activeItem, setActiveItem] = useState(0);
@@ -126,6 +138,10 @@ function App() {
       (route) => route === window.location.pathname
     );
     setActiveItem(initialIndex !== -1 ? initialIndex : 0);
+  }, []);
+
+  useEffect(() => {
+    preloadImages(imageUrls);
   }, []);
 
   useEffect(() => {

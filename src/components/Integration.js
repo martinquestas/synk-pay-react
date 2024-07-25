@@ -34,17 +34,22 @@ const Integration = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <button
-          className="invisible-button button1"
+          className="integration-invisible-button integration-button1"
           onClick={() => handleButtonClick(0)}
         ></button>
         <button
-          className="invisible-button button2"
+          className="integration-invisible-button integration-button2"
           onClick={() => handleButtonClick(1)}
         ></button>
         <button
-          className="invisible-button button3"
+          className="integration-invisible-button integration-button3"
           onClick={() => handleButtonClick(2)}
         ></button>
+      </div>
+      <div className="integration-footer-container">
+        <div className="integration-copyright">
+          <p>Powered by Novatide Labs</p>
+        </div>
       </div>
     </div>
   );
