@@ -35,9 +35,6 @@ const Home = () => {
           businesses worldwide.
         </p>
       </div>
-      <div className="home-page-three">
-        <p>Powered by Novatide Labs</p>
-      </div>
     </div>
   );
 };
