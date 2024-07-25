@@ -42,7 +42,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   z-index: 1; /* Ensures the image stays in the background */
   opacity: 0; /* Initially hidden */
   animation: fade-in 1s ease-out forwards;
@@ -56,7 +56,7 @@ html {
   width: 100%;
   height: 110%;
   object-fit: cover;
-  margin-top: -50px;
+  margin-top: 50px;
 
 }
 
@@ -74,14 +74,14 @@ html {
 .home-page h2 {
   font-family: "Karla", sans-serif;
   font-weight: 600;
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .home-page p {
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .home-page-two {
@@ -103,10 +103,10 @@ html {
 }
 
 .home-page-two p {
-  margin-top: 30px;
+  margin-top: 10px;
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 div.footer-container {

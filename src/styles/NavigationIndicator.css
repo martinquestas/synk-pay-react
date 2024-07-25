@@ -8,7 +8,7 @@
     border-radius: 50px;
     z-index: 1000;
     position: fixed;
-    bottom: 5%;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
     min-height: 40px;
