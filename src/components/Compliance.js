@@ -19,7 +19,7 @@ const Compliance = () => {
       </div>
       <div className="compliance-content">
         <div className="compliance-item">
-          <img src="static/images/compliance/mica.png" alt="MiCA Regulations" />
+          <img src="static/images/Compliance/mica.png" alt="MiCA Regulations" />
           <h3>MiCA Regulations</h3>
           <p>
             Comprehensive adherence to the Markets in Crypto-Assets regulations,
@@ -27,7 +27,7 @@ const Compliance = () => {
           </p>
         </div>
         <div className="compliance-item">
-          <img src="static/images/compliance/aml.png" alt="AML/CTF Measures" />
+          <img src="static/images/Compliance/aml.png" alt="AML/CTF Measures" />
           <h3>AML/CTF Measures</h3>
           <p>
             Implementing rigorous Anti-Money Laundering and Counter-Terrorist
@@ -37,7 +37,7 @@ const Compliance = () => {
           </p>
         </div>
         <div className="compliance-item">
-          <img src="static/images/compliance/gdpr.png" alt="GDPR Compliance" />
+          <img src="static/images/Compliance/gdpr.png" alt="GDPR Compliance" />
           <h3>GDPR Compliance</h3>
           <p>
             Protecting personal data with full compliance to the General Data

@@ -1,4 +1,8 @@
 /* Home.css */
+html {
+  scroll-behavior: smooth;
+  background-color: black;
+}
 
 @keyframes slide-up {
   from {
@@ -23,7 +27,7 @@
 .home-main-wrapper {
   position: relative;
   background-color: black;
-  height: 110vh;
+  height: 120vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -50,8 +54,9 @@
 
 .home-background-image{
   width: 100%;
-  height: 100%;
+  height: 120%;
   object-fit: cover;
+  margin-top: 50px;
 
 }
 
@@ -59,8 +64,6 @@
 .home-page {
   color: white;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: -250px;
   width: 500px;
   opacity: 0; /* Initially hidden */
   animation: slide-up 1s ease-out forwards;
@@ -71,22 +74,20 @@
 .home-page h2 {
   font-family: "Karla", sans-serif;
   font-weight: 600;
-  font-size: 44px;
+  font-size: 42px;
 }
 
 .home-page p {
   margin-top: 30px;
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .home-page-two {
   color: white;
   text-align: center;
   width: 800px;
-  margin-top: 400px;
-
   opacity: 0; /* Initially hidden */
   animation: slide-up 1s ease-out forwards;
   animation-delay: 0.5s;
@@ -107,7 +108,7 @@
 }
 
 .home-page-three {
-  color: white;
+  color: #c5c5c5;
   text-align: center;
   margin-top: 80px;
   margin-bottom: -250px;
@@ -116,14 +117,15 @@
   opacity: 0; /* Initially hidden */
   animation: slide-up 1s ease-out forwards;
   animation-delay: 0.5s;
-  z-index: 1; /* Ensures the content stays above the background image */
+  z-index: 1000;
 }
 
 .home-page-three p {
-  font-family: "Prompt";
+  font-family: "Prompt", sans-serif;
   font-weight: 500;
   text-align: center;
   font-size: 15px;
+  margin-bottom: 50px;
   color: #c5c5c5;
 }
 
