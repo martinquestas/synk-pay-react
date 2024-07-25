@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/Home.css";
 import Footer from "./Footer";
 import Slider from "react-slick";
@@ -6,11 +6,22 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Home = () => {
+const Home = ({ isSlidingActive }) => {
+  const imageWrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (imageWrapperRef.current) {
+      if (isSlidingActive) {
+        imageWrapperRef.current.style.pointerEvents = "none";
+      } else {
+        imageWrapperRef.current.style.pointerEvents = "auto";
+      }
+    }
+  }, [isSlidingActive]);
+
   return (
     <div className="home-main-wrapper">
-      <div className="home-image-wrapper">
-        {" "}
+      <div className="home-image-wrapper" ref={imageWrapperRef}>
         <img
           src="static/images/Home/bg-home.png"
           alt="Background"
@@ -24,7 +35,7 @@ const Home = () => {
         <p>
           Welcome to Synk Pay, where innovation meets security in digital
           finance.
-        </p>{" "}
+        </p>
       </div>
       <div className="home-page-two">
         <p>
