@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
   background-color: black;
+  overflow-x: hidden;
 }
 
 @keyframes slide-up {
@@ -52,7 +53,8 @@ html {
 }
 
 .home-background-image{
-  width: 100%;
+  width: 110%;
+  margin-left: -5%;
   height: 120%;
   object-fit: cover;
   margin-top: 50px;
@@ -91,7 +93,7 @@ html {
   animation: slide-up 1s ease-out forwards;
   animation-delay: 0.5s;
   z-index: 1;
-  margin-bottom: -100px;
+  margin-bottom: -200px;
   margin-top: 200px;
 }
 
@@ -107,26 +109,3 @@ html {
   font-weight: 300;
   font-size: 22px;
 }
-
-.home-page-three {
-  color: #c5c5c5;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: -250px;
-  padding-bottom: 100px;
-  width: 300px;
-  opacity: 0; /* Initially hidden */
-  animation: slide-up 1s ease-out forwards;
-  animation-delay: 0.5s;
-  z-index: 1000;
-}
-
-.home-page-three p {
-  font-family: "Prompt", sans-serif;
-  font-weight: 500;
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 50px;
-  color: #c5c5c5;
-}
-
