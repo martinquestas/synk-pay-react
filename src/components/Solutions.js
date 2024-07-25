@@ -21,9 +21,9 @@ const Solutions = () => {
       <div className="solutions-content">
         <div className="solutions-item">
           <div className="image-container-behind">
-            <img src="static/images/solutions/sub1.png" alt="Solution 1" />
+            <img src="static/images/Solutions/sub1.png" alt="Solution 1" />
             <img
-              src="static/images/solutions/sub1_sub.png"
+              src="static/images/Solutions/sub1_sub.png"
               alt="Overlay 1"
               className="overlay-image-behind"
             />
@@ -36,9 +36,9 @@ const Solutions = () => {
         </div>
         <div className="solutions-item">
           <div className="image-container">
-            <img src="static/images/solutions/sub2.png" alt="Solution 2" />
+            <img src="static/images/Solutions/sub2.png" alt="Solution 2" />
             <img
-              src="static/images/solutions/sub2_sub.png"
+              src="static/images/Solutions/sub2_sub.png"
               alt="Overlay 2"
               className="overlay-image"
             />
@@ -48,9 +48,9 @@ const Solutions = () => {
         </div>
         <div className="solutions-item">
           <div className="image-container">
-            <img src="static/images/solutions/sub3.png" alt="Solution 3" />
+            <img src="static/images/Solutions/sub3.png" alt="Solution 3" />
             <img
-              src="static/images/solutions/sub3_sub.png"
+              src="static/images/Solutions/sub3_sub.png"
               alt="Overlay 3"
               className="overlay-image"
             />
@@ -63,9 +63,9 @@ const Solutions = () => {
         </div>
         <div className="solutions-item">
           <div className="image-container-movedup">
-            <img src="static/images/solutions/sub4.png" alt="Solution 4" />
+            <img src="static/images/Solutions/sub4.png" alt="Solution 4" />
             <img
-              src="static/images/solutions/sub4_sub.png"
+              src="static/images/Solutions/sub4_sub.png"
               alt="Overlay 4"
               className="overlay-image"
             />
@@ -78,7 +78,7 @@ const Solutions = () => {
         </div>
         <div className="solutions-item">
           <div className="image-container">
-            <img src="static/images/solutions/sub5_edit.png" alt="Solution 5" />
+            <img src="static/images/Solutions/sub5_edit.png" alt="Solution 5" />
           </div>
           <h3>Seamless Currency Conversion</h3>
           <p>
