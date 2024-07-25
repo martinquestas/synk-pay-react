@@ -60,6 +60,7 @@
   color: white;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: -250px;
   width: 500px;
   opacity: 0; /* Initially hidden */
   animation: slide-up 1s ease-out forwards;
@@ -83,8 +84,9 @@
 .home-page-two {
   color: white;
   text-align: center;
-  margin-top: 250px;
   width: 800px;
+  margin-top: 400px;
+
   opacity: 0; /* Initially hidden */
   animation: slide-up 1s ease-out forwards;
   animation-delay: 0.5s;
