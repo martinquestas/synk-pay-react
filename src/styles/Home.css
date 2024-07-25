@@ -28,6 +28,7 @@ html {
 .home-main-wrapper {
   background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);  height: 120vh;
   width: 100%;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +42,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   z-index: 1; /* Ensures the image stays in the background */
   opacity: 0; /* Initially hidden */
   animation: fade-in 1s ease-out forwards;
@@ -52,9 +53,8 @@ html {
 }
 
 .home-background-image{
-  width: 110%;
-  margin-left: -5%;
-  height: 120%;
+  width: 100%;
+  height: 110%;
   object-fit: cover;
   margin-top: 50px;
 
@@ -107,4 +107,28 @@ html {
   font-family: "Karla", sans-serif;
   font-weight: 300;
   font-size: 22px;
+}
+
+div.footer-container {
+  position: absolute;
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  display: block;
+  margin: 0px auto -150px auto;
+  background-color: transparent;
+  bottom: 0;
+}
+
+.footer-container .copyright {
+  color: #c5c5c5;
+  width: 100%;
+  font-family: "Prompt", sans-serif;
+}
+
+
+.footer-container .copyright p {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  color: #c5c5c5;
 }
