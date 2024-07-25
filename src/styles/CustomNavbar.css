@@ -1,4 +1,8 @@
 /* CustomNavbar.css */
+body {
+  overflow-x: hidden;
+}
+
 
 .navbar {
   display: flex;
@@ -41,9 +45,16 @@
 }
 
 .nav-links a:hover {
-  color: #00adb5; /* Adjust hover color as needed */
+  color: #00adb5;
 }
 
 .nav-links .active {
-  color: #00adb5; /* Active link color */
+  color: #00adb5;
 }
+
+
+.content-container.sliding {
+  overflow: hidden;
+}
+
+

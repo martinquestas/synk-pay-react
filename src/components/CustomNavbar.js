@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/CustomNavbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const CustomNavbar = () => {
+const CustomNavbar = ({ handleItemClick, activeItem }) => {
   return (
     <div>
       {/* Desktop Navbar */}
@@ -18,25 +18,54 @@ const CustomNavbar = () => {
           </a>
         </div>
         <div className="nav-links">
-          <NavLink to="/" exact activeClassName="active">
+          <NavLink
+            to="/"
+            exact
+            className={activeItem === 0 ? "active" : ""}
+            onClick={() => handleItemClick(0)}
+          >
             Synchronise
           </NavLink>
-          <NavLink to="/solutions" activeClassName="active">
+          <NavLink
+            to="/solutions"
+            className={activeItem === 1 ? "active" : ""}
+            onClick={() => handleItemClick(1)}
+          >
             Solutions
           </NavLink>
-          <NavLink to="/compliance" activeClassName="active">
+          <NavLink
+            to="/compliance"
+            className={activeItem === 2 ? "active" : ""}
+            onClick={() => handleItemClick(2)}
+          >
             Compliance
           </NavLink>
-          <NavLink to="/security" activeClassName="active">
+          <NavLink
+            to="/security"
+            className={activeItem === 3 ? "active" : ""}
+            onClick={() => handleItemClick(3)}
+          >
             Security
           </NavLink>
-          <NavLink to="/integration" activeClassName="active">
+          <NavLink
+            to="/integration"
+            className={activeItem === 4 ? "active" : ""}
+            onClick={() => handleItemClick(4)}
+          >
             Integration
           </NavLink>
-          <NavLink to="/insights" activeClassName="active">
+          <NavLink
+            to="/insights"
+            className={activeItem === 5 ? "active" : ""}
+            onClick={() => handleItemClick(5)}
+          >
             Insights
           </NavLink>
-          <NavLink to="/contact" activeClassName="active">
+          <NavLink
+            to="/contact"
+            className={activeItem === 6 ? "active" : ""}
+            onClick={() => handleItemClick(6)}
+          >
             Contact
           </NavLink>
         </div>
