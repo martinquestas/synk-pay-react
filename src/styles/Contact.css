@@ -26,6 +26,7 @@
 
 .contact-page {
   color: white;
+  margin-top: 100px;
   text-align: center;
   width: 670px;
   animation: slide-up 1s ease-out forwards;
@@ -128,7 +129,6 @@
   width: 100%;
   font-family: "Prompt", sans-serif;
   margin-top: 150px;
-  margin-bottom: -300px;
 }
 
 

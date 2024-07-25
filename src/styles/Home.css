@@ -113,7 +113,7 @@ div.footer-container {
   position: absolute;
   background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
   display: block;
-  margin: 0px auto -150px auto;
+  margin: 100px auto -150px auto;
   background-color: transparent;
   bottom: 0;
 }
