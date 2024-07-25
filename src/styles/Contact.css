@@ -27,7 +27,6 @@
 .contact-page {
   color: white;
   text-align: center;
-  margin-top: -140px;
   width: 670px;
   animation: slide-up 1s ease-out forwards;
 }
