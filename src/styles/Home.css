@@ -33,7 +33,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -210px;
+  margin-top: -150px;
   overflow: hidden;
 }
 
@@ -42,7 +42,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 140vh;
+  height: 110vh;
   z-index: 1; /* Ensures the image stays in the background */
   opacity: 0; /* Initially hidden */
   animation: fade-in 1s ease-out forwards;
@@ -56,7 +56,7 @@ html {
   width: 100%;
   height: 110%;
   object-fit: cover;
-  margin-top: 50px;
+  margin-top: -50px;
 
 }
 
