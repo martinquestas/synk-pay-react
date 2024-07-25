@@ -1,0 +1,41 @@
+.justify-content-center.indicator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85899F80;
+    width: 200px;
+    padding: 0px 1px;
+    border-radius: 50px;
+    z-index: 1000;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 40px;
+  }
+  
+  .dot-content {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 15px 0.9rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+  
+  .indicator-container > .dot.active {
+    transform: scale(1.8);
+  }
+  
+  a.dot.active .dot-content {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  
