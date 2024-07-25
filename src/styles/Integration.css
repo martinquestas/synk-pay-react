@@ -1,0 +1,82 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.integration-main-wrapper {
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 110vh;
+  margin-top: -210px;
+  overflow-y: hidden;
+}
+
+.integration-header {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  animation: slide-up 1s ease-out forwards;
+}
+
+.integration-header h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.integration-header p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.integration-image-wrapper {
+  position: relative;
+  width: 1151px;
+  height: 490px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.integration-image-wrapper.fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.invisible-button {
+  position: absolute;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.button1 {
+  top: 85px;
+  left: 215px;
+}
+
+.button2 {
+  top: 305px;
+  left: 280px;
+}
+
+.button3 {
+  top: 325px;
+  left: 87px;
+}
