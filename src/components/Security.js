@@ -76,11 +76,15 @@ const Security = () => {
           <img
             src={contentData[currentIndex].image}
             alt="Security feature"
-            className="content-image fade-in" // Add fade-in class for the image
+            className="content-image fade-in"
           />
         </div>
       </div>
-      <Footer />
+      <div className="security-footer-container">
+        <div className="security-copyright">
+          <p>Powered by Novatide Labs</p>
+        </div>
+      </div>
     </div>
   );
 };
