@@ -135,4 +135,18 @@
     font-size: 16px;
     margin-top: 10px;
   }
+  .insights-footer-container .insights-copyright {
+    color: #c5c5c5;
+    width: 100%;
+    font-family: "Prompt", sans-serif;
+    margin-top: 200px;
+  }
   
+  
+  .insights-footer-container .insights-copyright p {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+    color: #c5c5c5;
+  }

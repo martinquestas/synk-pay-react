@@ -31,6 +31,11 @@ const Contact = () => {
           <p>+00 123 456 789</p>
         </div>
       </div>
+      <div className="contact-footer-container">
+        <div className="contact-copyright">
+          <p>Powered by Novatide Labs</p>
+        </div>
+      </div>
     </div>
   );
 };

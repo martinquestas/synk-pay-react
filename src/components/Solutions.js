@@ -86,6 +86,11 @@ const Solutions = () => {
             efficiency.
           </p>
         </div>
+        <div className="solutions-footer-container">
+          <div className="solutions-copyright">
+            <p>Powered by Novatide Labs</p>
+          </div>
+        </div>
       </div>
     </div>
   );

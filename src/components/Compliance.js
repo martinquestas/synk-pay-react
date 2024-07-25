@@ -46,6 +46,11 @@ const Compliance = () => {
           </p>
         </div>
       </div>
+      <div className="compliance-footer-container">
+        <div className="compliance-copyright">
+          <p>Powered by Novatide Labs</p>
+        </div>
+      </div>
     </div>
   );
 };

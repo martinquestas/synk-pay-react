@@ -43,6 +43,11 @@ const Insights = () => {
           <p>Anticipate market trends and make informed decisions.</p>
         </div>
       </div>
+      <div className="insights-footer-container">
+        <div className="insights-copyright">
+          <p>Powered by Novatide Labs</p>
+        </div>
+      </div>
     </div>
   );
 };
