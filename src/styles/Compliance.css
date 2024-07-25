@@ -27,6 +27,7 @@
     padding: 50px 20px;
     min-height: 110vh;
     margin-top: -210px;
+    overflow-y: hidden;
   }
   
   .compliance-header {

@@ -33,7 +33,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -150px;
+  margin-top: -250px;
   overflow: hidden;
 }
 
@@ -93,7 +93,7 @@ html {
   animation-delay: 0.5s;
   z-index: 1;
   margin-bottom: -100px;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .home-page-two h2 {
