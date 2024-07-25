@@ -42,7 +42,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120vh;
+  height: 140vh;
   z-index: 1; /* Ensures the image stays in the background */
   opacity: 0; /* Initially hidden */
   animation: fade-in 1s ease-out forwards;
@@ -50,6 +50,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -210px;
 }
 
 .home-background-image{
@@ -69,6 +70,7 @@ html {
   animation: slide-up 1s ease-out forwards;
   animation-delay: 0s;
   z-index: 3;
+  margin-bottom: 100px;
 }
 
 .home-page h2 {

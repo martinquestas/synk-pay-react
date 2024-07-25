@@ -14,6 +14,7 @@ import Security from "./components/Security";
 import Integration from "./components/Integration";
 import Insights from "./components/Insights";
 import Contact from "./components/Contact";
+import NavigationIndicator from "./components/NavigationIndicator";
 
 function App() {
   const [activeItem, setActiveItem] = useState(0);
@@ -45,6 +46,12 @@ function App() {
   };
 
   const handleItemClick = (index) => {
+    setActiveItem(index);
+    navigate(routes[index]);
+    handleTitleColorChange(index);
+  };
+
+  const handleDotClick = (index) => {
     setActiveItem(index);
     navigate(routes[index]);
     handleTitleColorChange(index);
@@ -158,6 +165,10 @@ function App() {
         <Route path="/insights" element={<Insights />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <NavigationIndicator
+        activeIndex={activeItem}
+        handleDotClick={handleDotClick}
+      />
     </div>
   );
 }
