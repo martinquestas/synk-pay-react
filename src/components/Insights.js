@@ -20,7 +20,7 @@ const Insights = () => {
       <div className="insights-content">
         <div className="insights-item">
           <img
-            src="static/images/insights/realtime-tracking.png"
+            src="static/images/Insights/realtime-tracking.png"
             alt="Real-Time Tracking"
           />
           <h3>Real-Time Tracking</h3>
@@ -28,7 +28,7 @@ const Insights = () => {
         </div>
         <div className="insights-item-two">
           <img
-            src="static/images/insights/customizable-reports.png"
+            src="static/images/Insights/customizable-reports.png"
             alt="Customizable Reports"
           />
           <h3>Customizable Reports</h3>
@@ -36,7 +36,7 @@ const Insights = () => {
         </div>
         <div className="insights-item-three">
           <img
-            src="static/images/insights/predictive-analytics.png"
+            src="static/images/Insights/predictive-analytics.png"
             alt="Predictive Analytics"
           />
           <h3>Predictive Analytics</h3>
