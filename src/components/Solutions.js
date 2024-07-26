@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Solutions.css";
 import Footer from "./Footer";
 import Slider from "react-slick";
@@ -7,9 +7,21 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Solutions = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="solutions-main-wrapper">
       <div className="solutions-header">
+        <h4>Solutions</h4>
         <h2>Business Banking Designed</h2>
         <h2>By Business People</h2>
         <p>

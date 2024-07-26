@@ -21,6 +21,10 @@
       transform: rotateX(360deg);
     }
   }
+
+  .security-header h4 {
+    display: none;
+  }
   
   .security-main-wrapper {
     background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
@@ -68,7 +72,7 @@
   }
   
   .line-image {
-    height: 550px; /* Adjust based on your actual image height */
+    height: 550px;
     animation: fade-in 1s;
   }
   
@@ -77,25 +81,24 @@
     background: none;
     border: none;
     border-radius: 50px;
-    width: 50px; /* Adjust based on the size of the clickable area */
-    height: 50px; /* Adjust based on the size of the clickable area */
+    width: 50px;
+    height: 50px;
     cursor: pointer;
   }
   
-  /* Position the buttons over the circles */
   button.invisible-button.button1 {
-    top: -10px; /* Adjust based on the position of the circle */
-    left: 0px; /* Adjust based on the position of the circle */
+    top: -10px;
+    left: 0px;
   }
   
   button.invisible-button.button2 {
-    top: 210px; /* Adjust based on the position of the circle */
-    left: 0px; /* Adjust based on the position of the circle */
+    top: 210px;
+    left: 0px;
   }
   
   button.invisible-button.button3 {
-    top: 505px; /* Adjust based on the position of the circle */
-    left: 0px; /* Adjust based on the position of the circle */
+    top: 505px;
+    left: 0px;
   }
   
   .content-section {
@@ -106,6 +109,7 @@
   .content-section h3 {
     font-family: "Karla", sans-serif;
     font-weight: 700;
+    color:#41C5D3;
     font-size: 23px;
     opacity: 0;
     animation: slide-up 0.5s ease-out forwards;
@@ -122,7 +126,7 @@
   
   .content-image {
     margin-top: 20px;
-    width: 370px; /* Adjust based on your actual image width */
+    width: 370px;
     animation: fade-in 2s ease-out;
   }
   
@@ -140,4 +144,67 @@
     text-align: center;
     font-size: 15px;
     color: #c5c5c5;
+  }
+
+  @media screen and (max-width: 768px) {
+    .security-main-wrapper {
+      margin-top: -27vh;
+    }
+    .security-header {
+      width: 100%;
+    }
+    .security-header h4 {
+      display: block;
+      margin-bottom: 20px;
+      font-family: "Karla", "sans-serif";
+      font-weight: 700;
+      font-size: 17px;
+      color: rgba(114, 114, 114, 1);
+      text-align: center;
+    }
+    .security-header h2 {
+      font-size: 27px;
+    }
+    .security-header p {
+      font-size: 18px;
+      width: 100%;
+    }
+
+    .content-image {
+      margin-top: 20px;
+      width: 270px;
+      animation: fade-in 2s ease-out;
+    }
+
+    .content-section h3 {
+      font-weight: 700;
+      font-size: 17px;
+      opacity: 0;
+      animation: slide-up 0.5s ease-out forwards;
+    }
+    
+    .content-section p {
+      font-family: "Karla", sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      margin-top: 10px;
+      width: 270px;
+      animation: slide-up 0.5s ease-out forwards;
+    }
+
+    .line-image{
+      height: 400px;
+    }
+
+    button.invisible-button.button1 {
+      top: -10px;
+    }
+    
+    button.invisible-button.button2 {
+      top: 165px;
+    }
+    
+    button.invisible-button.button3 {
+      top: 370px;
+    }
   }

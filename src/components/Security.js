@@ -36,12 +36,13 @@ const Security = () => {
 
   const handleButtonClick = (index) => {
     setCurrentIndex(index);
-    setAnimationKey((prevKey) => prevKey + 1); // Force re-render to reset animations
+    setAnimationKey((prevKey) => prevKey + 1);
   };
 
   return (
     <div className="security-main-wrapper">
       <div className="security-header">
+        <h4>Security</h4>
         <h2>Uncompromising Security</h2>
         <h2>for Your Peace of Mind</h2>
         <p>Our commitment to security is unwavering:</p>
@@ -49,10 +50,10 @@ const Security = () => {
       <div className="security-content">
         <div className="line-image-wrapper">
           <img
-            key={animationKey} // Add key to reset animation
+            key={animationKey}
             src={lineImages[currentIndex]}
             alt="Line with circles"
-            className="line-image fade-in" // Add fade-in class for the image
+            className="line-image fade-in"
           />
           <button
             className="invisible-button button1"

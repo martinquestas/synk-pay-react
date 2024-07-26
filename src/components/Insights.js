@@ -10,6 +10,7 @@ const Insights = () => {
   return (
     <div className="insights-main-wrapper">
       <div className="insights-header">
+        <h4>Insights</h4>
         <h2>Data-Driven</h2>
         <h2>Decision Making</h2>
         <p>

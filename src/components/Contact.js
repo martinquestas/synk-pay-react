@@ -10,6 +10,7 @@ const Contact = () => {
   return (
     <div className="contact-main-wrapper">
       <div className="contact-page">
+        <h4>Contact Us</h4>
         <h2>Get in Touch</h2>
         <p>
           Discover how Synk Pay can transform your business's financial
