@@ -9,6 +9,10 @@
   }
 }
 
+.contact-page h4 {
+  display: none;
+}
+
 .contact-main-wrapper {
   background-image: url("../../public/static/images/Contact/bg-contact.png");
   background-color: black;

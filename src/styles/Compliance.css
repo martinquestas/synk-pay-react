@@ -18,6 +18,11 @@
     opacity: 1;
   }
 }
+
+.compliance-header h4 {
+  display: none;
+}
+
 .compliance-main-wrapper {
   background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
     color: white;

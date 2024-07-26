@@ -15,6 +15,10 @@ html, body {
   }
 }
 
+.insights-header h4 {
+  display: none;
+}
+
 .insights-main-wrapper {
   overflow-y: hidden;
   background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
@@ -54,8 +58,7 @@ html, body {
 
 .insights-content {
   display: flex;
-  flex-direction: column; /* Change to column for vertical stacking */
-  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -105,7 +108,7 @@ html, body {
   .insights-main-wrapper {
     margin-top: -27vh;
   }
-  .insights-header{
+  .insights-header {
     width: 100%;
   }
   .insights-header h4 {
@@ -123,5 +126,15 @@ html, body {
   .insights-header p {
     font-size: 18px;
     width: 100%;
+  }
+
+  .insights-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    gap: 20px; /* Add gap between items */
+  }
+
+  .insights-item, .insights-item-two, .insights-item-three {
+    max-width: 100%; /* Adjust the max-width for mobile */
   }
 }
