@@ -47,13 +47,9 @@
   background-size: cover;
   background-position: center;
   margin-top: 20px;
-  animation: slide-up 1s ease-out forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-
-.integration-image-wrapper.fade-in {
   animation: fade-in 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 .integration-invisible-button {
@@ -87,7 +83,6 @@
   width: 100%;
   font-family: "Prompt", sans-serif;
 }
-
 
 .integration-footer-container .integration-copyright p {
   font-family: "Prompt", sans-serif;

@@ -7,16 +7,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  "static/images/Integration/sub_2.png",
+  "static/images/Integration/sub_1.png",
   "static/images/Integration/sub_3.png",
   "static/images/Integration/sub_2.png",
 ];
 
 const Integration = () => {
   const [backgroundImage, setBackgroundImage] = useState(images[0]);
+  const [animationKey, setAnimationKey] = useState(0);
 
   const handleButtonClick = (index) => {
     setBackgroundImage(images[index]);
+    setAnimationKey((prevKey) => prevKey + 1);
   };
 
   return (
@@ -30,7 +32,8 @@ const Integration = () => {
         </p>
       </div>
       <div
-        className="integration-image-wrapper"
+        key={animationKey} // Add key to trigger animation
+        className="integration-image-wrapper fade-in"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <button
