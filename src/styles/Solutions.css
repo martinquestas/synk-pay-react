@@ -237,5 +237,9 @@
     width: 100%;
     margin-bottom: -170px;
   }
+
+  .image-container-movedup {
+    margin-top: 10px;
+  }
   
 }

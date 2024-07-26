@@ -7,7 +7,7 @@
   }
 }
 
-.integration-header h4 {
+.integration-header h4, .integration-description-container {
   display: none;
 }
 
@@ -52,7 +52,7 @@
   background-position: center;
   margin-top: 20px;
   animation: fade-in 1s ease-out forwards;
-  animation-delay: 1s;
+  animation-delay: 0s;
   opacity: 0;
 }
 
@@ -159,6 +159,7 @@
     margin-top: 55px;
     align-items: center;
     justify-items: center;
+    display: block;
   }
 
   .integration-description-container h3,
