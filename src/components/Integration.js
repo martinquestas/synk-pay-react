@@ -22,6 +22,7 @@ const Integration = () => {
   return (
     <div className="integration-main-wrapper">
       <div className="integration-header">
+        <h4>Integration</h4>
         <h2>One Wallet for All</h2>
         <h2>Your Needs</h2>
         <p>
