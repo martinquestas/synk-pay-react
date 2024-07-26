@@ -50,6 +50,7 @@ const Home = ({ isSlidingActive }) => {
       </div>
 
       <div className="home-page">
+        <h4>Synchronise</h4>
         <h2>Synchronise Your</h2>
         <h2>Business Finances</h2>
         <p>

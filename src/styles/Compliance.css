@@ -98,3 +98,48 @@
     font-size: 15px;
     color: #c5c5c5;
   }
+
+  @media screen and (max-width: 768px) {
+    .compliance-main-wrapper {
+      margin-top: -27vh;
+    }
+    .compliance-header h4 {
+      display: block;
+      margin-bottom: 20px;
+      font-family: "Karla", "sans-serif";
+      font-weight: 700;
+      font-size: 17px;
+      color: rgba(114, 114, 114, 1);
+      text-align: center;
+    }
+    .compliance-header h2 {
+      font-size: 27px;
+    }
+    .compliance-header p {
+      font-size: 18px;
+      width: 100%;
+    }
+    .compliance-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .compliance-item {
+      max-width: 100%;
+    }
+    .compliance-item img {
+      width: 30%;
+      height: 30%;
+      margin-bottom: 0px;
+    }
+
+    .compliance-item h3 {
+      font-size: 18px;
+      margin-bottom: 0px;
+    }
+    .compliance-item p {
+      font-size: 14px;
+      margin-top: 0px;
+
+    }
+    
+  }

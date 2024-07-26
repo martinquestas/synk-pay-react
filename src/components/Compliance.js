@@ -10,6 +10,7 @@ const Compliance = () => {
   return (
     <div className="compliance-main-wrapper">
       <div className="compliance-header">
+        <h4>Compliance</h4>
         <h2>Leading with</h2>
         <h2>Compliance and Security</h2>
         <p>
