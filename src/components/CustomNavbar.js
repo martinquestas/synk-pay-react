@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/CustomNavbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { MobileMenuContext } from "../context/MobileMenuContext";
 
 const CustomNavbar = ({ handleItemClick, activeItem }) => {
+  const { isMenuOpen, toggleMenu } = useContext(MobileMenuContext);
+
   return (
     <div>
       {/* Desktop Navbar */}
-      <div className="navbar desktop-navbar">
+      <div
+        className={`navbar desktop-navbar mobile-navbar ${
+          isMenuOpen ? "open" : ""
+        }`}
+      >
         <div className="logo">
           <a href="https://synkpay.io">
             <img
@@ -17,7 +24,16 @@ const CustomNavbar = ({ handleItemClick, activeItem }) => {
             />
           </a>
         </div>
-        <div className="nav-links">
+        <button className={"menu-button"} onClick={() => toggleMenu()}>
+          &#9776;
+        </button>
+        <div className={`nav-links ${isMenuOpen ? "open-links" : ""}`}>
+          <button
+            className={`close-button ${isMenuOpen ? "shown" : ""}`}
+            onClick={() => toggleMenu()}
+          >
+            ⨉
+          </button>
           <NavLink
             to="/"
             exact

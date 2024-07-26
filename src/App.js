@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +16,7 @@ import Insights from "./components/Insights";
 import Contact from "./components/Contact";
 import NavigationIndicator from "./components/NavigationIndicator";
 import { preloadImages } from "./utils/preloadImages";
+import { MobileMenuContext } from "./context/MobileMenuContext";
 
 const imageUrls = [
   "static/images/Integration/sub_2.png",
@@ -45,6 +46,7 @@ function App() {
   const [touchEndX, setTouchEndX] = useState(null);
   const [isSlidingActive, setIsSlidingActive] = useState(false);
   const rootRef = useRef(null);
+  const { isMenuOpen, toggleMenu } = useContext(MobileMenuContext);
 
   const handleTitleColorChange = (index) => {
     const navbarTitles = document.querySelectorAll(".nav-links a");
@@ -58,6 +60,9 @@ function App() {
   };
 
   const handleItemClick = (index) => {
+    if (isMenuOpen){
+      toggleMenu();
+    }
     setActiveItem(index);
     navigate(routes[index]);
     handleTitleColorChange(index);
@@ -165,7 +170,7 @@ function App() {
   return (
     <div
       ref={rootRef}
-      className={`content-container ${isSlidingActive ? "sliding" : ""}`}
+      className={`content-container ${isSlidingActive ? "sliding" : ""} ${isMenuOpen ? 'menu-open' : ''}`}
     >
       <CustomNavbar handleItemClick={handleItemClick} activeItem={activeItem} />
       <Routes>

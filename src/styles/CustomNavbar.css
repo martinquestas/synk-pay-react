@@ -3,7 +3,6 @@ body {
   overflow-x: hidden;
 }
 
-
 .navbar {
   display: flex;
   flex-direction: column;
@@ -52,9 +51,143 @@ body {
   color: #00adb5;
 }
 
-
 .content-container.sliding {
   overflow: hidden;
 }
 
+/* Mobile styles */
 
+/* Mobile Navbar */
+.mobile-navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
+}
+
+.mobile-navbar .menu-button {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mobile-navbar .mobile-menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  width: 200px;
+  position: fixed;
+}
+
+.mobile-navbar.open .mobile-menu {
+  left: 0;
+}
+
+.mobile-navbar .mobile-menu a {
+  margin-top: 6px;
+  padding: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  font-family: "Karla";
+}
+
+.menu-button {
+  display: none;
+}
+
+.mobile-navbar .mobile-menu a.active {
+  color: rgba(65, 197, 211, 1);
+}
+
+.close-button {
+  display: none;
+  position: absolute;
+  top: 75px;
+  right: 30px;
+  color: rgba(65, 197, 211, 1);
+  background-color: transparent;
+  font-size: 26px;
+  outline: none;
+  inline-size: none;
+  border: 0px;
+  border-color: transparent;
+  align-self: flex-end;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .menu-open {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: "transparent";
+  }
+
+  .mobile-navbar .open {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: -200px;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: flex-start;
+    transition: left 0.3s ease;
+  }
+
+  .mobile-navbar .menu-button {
+    display: block;
+    width: 26;
+    height: 18;
+    margin-right: 16px;
+    font-size: 42px;
+    color: rgba(65, 197, 211, 1);
+  }
+
+  .logo {
+    margin-left: 18px;
+  }
+
+  .open-links {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-image: linear-gradient(
+      rgba(66, 83, 206, 1),
+      rgba(33, 42, 104, 1)
+    );
+    transition: left 0.3s ease;
+  }
+
+  .shown {
+    display: block;
+  }
+}
