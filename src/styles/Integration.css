@@ -8,7 +8,7 @@
 }
 
 .integration-main-wrapper {
-  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  background: linear-gradient(111deg, #0a0a0a 5.9%, #0a0a0a 97.91%);
   color: white;
   display: flex;
   flex-direction: column;
@@ -90,4 +90,16 @@
   text-align: center;
   font-size: 15px;
   color: #c5c5c5;
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 768px) {
+  .integration-header h4 {
+    font-family: "Karla", "sans-serif";
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(114, 114, 114, 1);
+    text-align: center;
+  }
 }
