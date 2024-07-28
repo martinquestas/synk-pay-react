@@ -28,8 +28,20 @@ const NavigationIndicator = ({ activeIndex, handleDotClick }) => {
   };
 
   return (
-    <div className="justify-content-center indicator-container">
-      {renderDots()}
+    <div className="navigation-wrapper">
+      <img
+        src="static/images/Navigation/arrow-left.png"
+        alt="Left Arrow"
+        className="arrow left-arrow"
+      />
+      <div className="justify-content-center indicator-container">
+        {renderDots()}
+      </div>
+      <img
+        src="static/images/Navigation/arrow-right.png"
+        alt="Right Arrow"
+        className="arrow right-arrow"
+      />
     </div>
   );
 };

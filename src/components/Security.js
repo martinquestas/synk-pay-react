@@ -19,13 +19,13 @@ const contentData = [
     image: "static/images/Security/sub1_2.png",
   },
   {
-    header: "02/ Multi-Factor Authentication",
-    text: "Enhanced security with multiple layers of authentication.",
+    header: "02/ Two-Factor Authentication",
+    text: "Adding an extra layer of security for your account access.",
     image: "static/images/Security/sub2_2.png",
   },
   {
-    header: "03/ Continuous Monitoring",
-    text: "24/7 monitoring to ensure your assets are always protected.",
+    header: "03/ Regular Audits and Monitoring",
+    text: "Continuous compliance checks and audits to maintain the highest security standards, ensuring your funds and information are always safe.",
     image: "static/images/Security/sub3_2.png",
   },
 ];
