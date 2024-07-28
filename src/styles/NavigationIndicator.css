@@ -1,41 +1,72 @@
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .justify-content-center.indicator-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #85899F80;
-    width: 200px;
-    padding: 0px 1px;
-    border-radius: 50px;
-    z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #73737380;
+  width: 200px;
+  padding: 0px 1px;
+  border-radius: 50px;
+  z-index: 1000;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 25px;
+}
+
+.dot-content {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 15px 0.9rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #A3A3A3;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.indicator-container > .dot.active {
+  transform: scale(1.8);
+  background-color: white;
+}
+
+a.dot.active .dot-content {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.arrow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    display: block;
+    width: 9px;
+    height: 15px;
     position: fixed;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
   }
-  
-  .dot-content {
-    width: 8px;
-    height: 8px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 15px 0.9rem;
+
+  .left-arrow {
+    left: 10px;
   }
-  
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    margin: 0 8px;
+
+  .right-arrow {
+    right: 10px;
   }
-  
-  .indicator-container > .dot.active {
-    transform: scale(1.8);
-  }
-  
-  a.dot.active .dot-content {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-  }
-  
+}

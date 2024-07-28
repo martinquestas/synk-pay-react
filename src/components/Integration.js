@@ -35,6 +35,11 @@ const Integration = () => {
   const [animationKey, setAnimationKey] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Local state for touch positions
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
+  const [isTouching, setIsTouching] = useState(false);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.matchMedia("(max-width: 768px)").matches) {
@@ -51,8 +56,12 @@ const Integration = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleButtonClick = (index) => {
+  const handleButtonClick = (index, event) => {
+    event.stopPropagation();
     setActiveIndex(index);
+    setTouchStartX(null);
+    setTouchEndX(null);
+    setIsTouching(false);
     if (window.matchMedia("(max-width: 768px)").matches) {
       return;
     } else {
@@ -60,6 +69,81 @@ const Integration = () => {
     }
     setAnimationKey((prevKey) => prevKey + 1);
   };
+
+  const stopPropagation = (event) => {
+    event.stopPropagation();
+    setIsTouching(false); // Reset isTouching on button interactions
+  };
+
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.touches[0].clientX);
+    setIsTouching(true);
+  };
+
+  const handleTouchMove = (event) => {
+    if (!isTouching) return;
+    setTouchEndX(event.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (event) => {
+    if (!isTouching) return;
+    const deltaX = touchStartX - touchEndX;
+    const sensitivity = 50;
+    if (Math.abs(deltaX) > sensitivity) {
+      // Trigger scroll only if swipe distance is greater than sensitivity
+      setTouchStartX(null);
+      setTouchEndX(null);
+      setIsTouching(false);
+    } else {
+      setTouchStartX(null);
+      setTouchEndX(null);
+      setIsTouching(false);
+    }
+  };
+
+  const handleMouseDown = (event) => {
+    setTouchStartX(event.clientX);
+    setIsTouching(true);
+  };
+
+  const handleMouseMove = (event) => {
+    if (!isTouching) return;
+    setTouchEndX(event.clientX);
+  };
+
+  const handleMouseUp = (event) => {
+    if (!isTouching) return;
+    const deltaX = touchStartX - touchEndX;
+    const sensitivity = 50;
+    if (Math.abs(deltaX) > sensitivity) {
+      // Trigger scroll only if swipe distance is greater than sensitivity
+      setTouchStartX(null);
+      setTouchEndX(null);
+      setIsTouching(false);
+    } else {
+      setTouchStartX(null);
+      setTouchEndX(null);
+      setIsTouching(false);
+    }
+  };
+
+  useEffect(() => {
+    const rootElement = document.querySelector(".integration-main-wrapper");
+    rootElement.addEventListener("touchstart", handleTouchStart);
+    rootElement.addEventListener("touchmove", handleTouchMove);
+    rootElement.addEventListener("touchend", handleTouchEnd);
+    rootElement.addEventListener("mousedown", handleMouseDown);
+    rootElement.addEventListener("mousemove", handleMouseMove);
+    rootElement.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      rootElement.removeEventListener("touchstart", handleTouchStart);
+      rootElement.removeEventListener("touchmove", handleTouchMove);
+      rootElement.removeEventListener("touchend", handleTouchEnd);
+      rootElement.removeEventListener("mousedown", handleMouseDown);
+      rootElement.removeEventListener("mousemove", handleMouseMove);
+      rootElement.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [isTouching, touchStartX, touchEndX]);
 
   return (
     <div className="integration-main-wrapper">
@@ -81,19 +165,31 @@ const Integration = () => {
           className={`integration-invisible-button integration-button1 ${
             activeIndex === 0 ? "active" : ""
           }`}
-          onClick={() => handleButtonClick(0)}
+          onClick={(e) => handleButtonClick(0, e)}
+          onTouchStart={stopPropagation}
+          onTouchEnd={stopPropagation}
+          onMouseDown={stopPropagation}
+          onMouseUp={stopPropagation}
         ></button>
         <button
           className={`integration-invisible-button integration-button2 ${
             activeIndex === 1 ? "active" : ""
           }`}
-          onClick={() => handleButtonClick(1)}
+          onClick={(e) => handleButtonClick(1, e)}
+          onTouchStart={stopPropagation}
+          onTouchEnd={stopPropagation}
+          onMouseDown={stopPropagation}
+          onMouseUp={stopPropagation}
         ></button>
         <button
           className={`integration-invisible-button integration-button3 ${
             activeIndex === 2 ? "active" : ""
           }`}
-          onClick={() => handleButtonClick(2)}
+          onClick={(e) => handleButtonClick(2, e)}
+          onTouchStart={stopPropagation}
+          onTouchEnd={stopPropagation}
+          onMouseDown={stopPropagation}
+          onMouseUp={stopPropagation}
         ></button>
         <>
           <div

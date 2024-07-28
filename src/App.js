@@ -45,6 +45,7 @@ function App() {
   const [touchStartX, setTouchStartX] = useState(null);
   const [touchEndX, setTouchEndX] = useState(null);
   const [isSlidingActive, setIsSlidingActive] = useState(false);
+  const [touchStartTime, setTouchStartTime] = useState(null);
   const rootRef = useRef(null);
   const { isMenuOpen, toggleMenu } = useContext(MobileMenuContext);
 
@@ -60,7 +61,7 @@ function App() {
   };
 
   const handleItemClick = (index) => {
-    if (isMenuOpen){
+    if (isMenuOpen) {
       toggleMenu();
     }
     setActiveItem(index);
@@ -92,6 +93,7 @@ function App() {
 
   const handleTouchStart = (event) => {
     setTouchStartX(event.touches[0].clientX);
+    setTouchStartTime(Date.now());
     setIsSlidingActive(true);
   };
 
@@ -100,22 +102,31 @@ function App() {
     setTouchEndX(event.touches[0].clientX);
   };
 
-  const handleTouchEnd = () => {
+  const handleTouchEnd = (event) => {
     if (!isSlidingActive || touchEndX === null) return;
     const deltaX = touchStartX - touchEndX;
     const sensitivity = 50;
-    if (deltaX > sensitivity) {
-      handleNext();
-    } else if (deltaX < -sensitivity) {
-      handlePrev();
+    const maxDuration = 500; // Maximum duration to consider as a swipe
+    const duration = Date.now() - touchStartTime;
+    const minDistance = 30; // Minimum distance to consider as a swipe
+
+    if (Math.abs(deltaX) > minDistance && duration < maxDuration) {
+      if (deltaX > sensitivity) {
+        handleNext();
+      } else if (deltaX < -sensitivity) {
+        handlePrev();
+      }
     }
+
     setTouchStartX(null);
     setTouchEndX(null);
     setIsSlidingActive(false);
+    setTouchStartTime(null);
   };
 
   const handleMouseDown = (event) => {
     setTouchStartX(event.clientX);
+    setTouchStartTime(Date.now());
     setIsSlidingActive(true);
   };
 
@@ -124,18 +135,26 @@ function App() {
     setTouchEndX(event.clientX);
   };
 
-  const handleMouseUp = () => {
+  const handleMouseUp = (event) => {
     if (!isSlidingActive || touchEndX === null) return;
     const deltaX = touchStartX - touchEndX;
     const sensitivity = 50;
-    if (deltaX > sensitivity) {
-      handleNext();
-    } else if (deltaX < -sensitivity) {
-      handlePrev();
+    const maxDuration = 500; // Maximum duration to consider as a swipe
+    const duration = Date.now() - touchStartTime;
+    const minDistance = 30; // Minimum distance to consider as a swipe
+
+    if (Math.abs(deltaX) > minDistance && duration < maxDuration) {
+      if (deltaX > sensitivity) {
+        handleNext();
+      } else if (deltaX < -sensitivity) {
+        handlePrev();
+      }
     }
+
     setTouchStartX(null);
     setTouchEndX(null);
     setIsSlidingActive(false);
+    setTouchStartTime(null);
   };
 
   useEffect(() => {
@@ -170,7 +189,9 @@ function App() {
   return (
     <div
       ref={rootRef}
-      className={`content-container ${isSlidingActive ? "sliding" : ""} ${isMenuOpen ? 'menu-open' : ''}`}
+      className={`content-container ${isSlidingActive ? "sliding" : ""} ${
+        isMenuOpen ? "menu-open" : ""
+      }`}
     >
       <CustomNavbar handleItemClick={handleItemClick} activeItem={activeItem} />
       <Routes>
