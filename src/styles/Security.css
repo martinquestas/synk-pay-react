@@ -207,4 +207,7 @@
     button.invisible-button.button3 {
       top: 370px;
     }
+    .security-footer-container .security-copyright p {
+      font-size: 12px;
+    }
   }

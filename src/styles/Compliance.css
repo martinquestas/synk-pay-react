@@ -147,5 +147,9 @@
       font-family: "Karla", sans-serif;
 
     }
+    .compliance-footer-container .compliance-copyright p {
+      font-size: 12px;
+      bottom: 10px;
+    }
     
   }

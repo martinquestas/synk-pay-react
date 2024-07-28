@@ -137,4 +137,7 @@ html, body {
   .insights-item, .insights-item-two, .insights-item-three {
     max-width: 100%; /* Adjust the max-width for mobile */
   }
+  .insights-footer-container .insights-copyright p {
+    font-size: 12px;
+  }
 }

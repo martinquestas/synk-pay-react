@@ -241,5 +241,8 @@
   .image-container-movedup {
     margin-top: 10px;
   }
+  .solutions-footer-container .solutions-copyright p {
+    font-size: 12px;
+  }
   
 }
