@@ -441,4 +441,8 @@
     animation: grow-vertical-mid-2 1s forwards;
     animation-delay: 3s;
   }
+
+  .integration-footer-container .integration-copyright p {
+    font-size: 12px;
+  }
 }

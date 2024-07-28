@@ -74,6 +74,14 @@
   color: rgb(126, 126, 126);
 }
 
+.contact-footer-container {
+  background-color: #f8f9fa; /* Adjust as needed */
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
 .contact-item p, .contact-item-two p, .contact-item-three p {
   font-weight: 300;
   font-size: 20px;
@@ -85,7 +93,8 @@
   color: #c5c5c5;
   width: 100%;
   font-family: "Prompt", sans-serif;
-  margin-top: 250px;
+  bottom: 0;
+
 }
 
 .contact-footer-container .contact-copyright p {
@@ -137,5 +146,8 @@
     position: absolute;
     bottom: 10px;
     background-color: transparent;
+  }
+  .contact-footer-container .contact-copyright p {
+    font-size: 12px;
   }
 }
