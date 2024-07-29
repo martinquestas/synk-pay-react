@@ -38,7 +38,7 @@
 .contact-page h2 {
   font-family: "Karla", sans-serif;
   font-weight: 600;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-top: 120px;
   margin-bottom: 70px;
 }
@@ -47,7 +47,7 @@
   margin-top: 30px;
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 27px;
+  font-size: 1.5vw;
 }
 
 .contact-details {
@@ -75,12 +75,12 @@
 }
 
 .contact-footer-container {
-  background-color: #f8f9fa; /* Adjust as needed */
-  padding: 10px 20px;
+  background-color: transparent;
+  padding: 0px 20px;
   text-align: center;
   width: 100%;
-  position: fixed;
-  bottom: 0;
+  position: sticky;
+  transform: translateY(50px) ;
 }
 .contact-item p, .contact-item-two p, .contact-item-three p {
   font-weight: 300;
