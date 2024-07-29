@@ -75,15 +75,15 @@ html, body {
 .home-page h2 {
   font-family: "Karla", sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.5vw;
   margin-top: -5px;
 }
 
 .home-page p {
   margin-top: 10px;
   font-family: "Karla", sans-serif;
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: 200;
+  font-size: 1.6vw;
 }
 
 .home-page-two {
@@ -98,17 +98,11 @@ html, body {
   margin-top: 100px;
 }
 
-.home-page-two h2 {
-  font-family: "Karla", sans-serif;
-  font-weight: 600;
-  font-size: 44px;
-}
-
 .home-page-two p {
   margin-top: 10px;
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 1.3vw;
 }
 
 div.footer-container {

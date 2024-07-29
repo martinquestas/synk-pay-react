@@ -50,6 +50,7 @@ body {
 
 .nav-links .active {
   color: #00adb5;
+  font-weight: 900;
 }
 
 .content-container.sliding {
