@@ -89,7 +89,7 @@ const Solutions = () => {
           </p>
         </div>
         <div className="solutions-item">
-          <div className="image-container">
+          <div className="image-container-bigger">
             <img src="static/images/Solutions/sub5_edit.png" alt="Solution 5" />
           </div>
           <h3>Seamless Currency Conversion</h3>
