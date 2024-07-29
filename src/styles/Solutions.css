@@ -40,14 +40,14 @@
 
 .solutions-header h2 {
   font-family: "Karla", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
+  font-weight: 600;
+  font-size: 2.5vw;
 }
 
 .solutions-header p {
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5vw;
   margin-top: 20px;
   margin-bottom: 150px;
   width: 640px;

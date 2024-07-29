@@ -44,15 +44,15 @@ html, body {
 .insights-header h2 {
   align-items: center;
   font-family: "Karla", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
+  font-weight: 600;
+  font-size: 2.5vw;
   margin-bottom: 0px;
 }
 
 .insights-header p {
   font-family: "Karla", sans-serif;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5vw;
   margin-top: 20px;
 }
 
