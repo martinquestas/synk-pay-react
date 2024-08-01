@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../styles/Integration.css";
-import Slider from "react-slick";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,7 +45,9 @@ const Integration = () => {
           "static/images/Integration/mobile_integration_image_1.png"
         );
       } else {
-        setBackgroundImage(images[0]);
+        setBackgroundImage(
+          "static/images/Integration/desktop_integration_image_1.png"
+        );
       }
     };
 
@@ -64,10 +64,8 @@ const Integration = () => {
     setIsTouching(false);
     if (window.matchMedia("(max-width: 768px)").matches) {
       return;
-    } else {
-      setBackgroundImage(images[index]);
     }
-    setAnimationKey((prevKey) => prevKey + 1);
+    // setAnimationKey((prevKey) => prevKey + 1);
   };
 
   const stopPropagation = (event) => {
@@ -156,54 +154,56 @@ const Integration = () => {
           cryptocurrency and fiat currency within a single wallet:
         </p>
       </div>
-      <div
-        key={animationKey} // Add key to trigger animation
-        className="integration-image-wrapper fade-in"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <button
-          className={`integration-invisible-button integration-button1 ${
-            activeIndex === 0 ? "active" : ""
-          }`}
-          onClick={(e) => handleButtonClick(0, e)}
-          onTouchStart={stopPropagation}
-          onTouchEnd={stopPropagation}
-          onMouseDown={stopPropagation}
-          onMouseUp={stopPropagation}
-        ></button>
-        <button
-          className={`integration-invisible-button integration-button2 ${
-            activeIndex === 1 ? "active" : ""
-          }`}
-          onClick={(e) => handleButtonClick(1, e)}
-          onTouchStart={stopPropagation}
-          onTouchEnd={stopPropagation}
-          onMouseDown={stopPropagation}
-          onMouseUp={stopPropagation}
-        ></button>
-        <button
-          className={`integration-invisible-button integration-button3 ${
-            activeIndex === 2 ? "active" : ""
-          }`}
-          onClick={(e) => handleButtonClick(2, e)}
-          onTouchStart={stopPropagation}
-          onTouchEnd={stopPropagation}
-          onMouseDown={stopPropagation}
-          onMouseUp={stopPropagation}
-        ></button>
-        <>
-          <div
-            className={`active-circle circle-${activeIndex} circle-anim-${activeIndex}`}
-          ></div>
-          <div className={`line-vertical line-${activeIndex}`}></div>
-          <div className={`line-horizontal line-h-${activeIndex}`}></div>
-          <div className={`line-horizontal line-h-mid-${activeIndex}`}></div>
-          <div className={`line-vertical line-mid-${activeIndex}`}></div>
-        </>
-      </div>
-      <div className="integration-description-container">
-        <h3>{CONTENT[activeIndex].title}</h3>
-        <p>{CONTENT[activeIndex].description}</p>
+      <div className="integration-content-container">
+        <div
+          key={animationKey} // Add key to trigger animation
+          className="integration-image-wrapper fade-in"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
+          <button
+            className={`integration-invisible-button integration-button1 ${
+              activeIndex === 0 ? "active" : ""
+            }`}
+            onClick={(e) => handleButtonClick(0, e)}
+            onTouchStart={stopPropagation}
+            onTouchEnd={stopPropagation}
+            onMouseDown={stopPropagation}
+            onMouseUp={stopPropagation}
+          ></button>
+          <button
+            className={`integration-invisible-button integration-button2 ${
+              activeIndex === 1 ? "active" : ""
+            }`}
+            onClick={(e) => handleButtonClick(1, e)}
+            onTouchStart={stopPropagation}
+            onTouchEnd={stopPropagation}
+            onMouseDown={stopPropagation}
+            onMouseUp={stopPropagation}
+          ></button>
+          <button
+            className={`integration-invisible-button integration-button3 ${
+              activeIndex === 2 ? "active" : ""
+            }`}
+            onClick={(e) => handleButtonClick(2, e)}
+            onTouchStart={stopPropagation}
+            onTouchEnd={stopPropagation}
+            onMouseDown={stopPropagation}
+            onMouseUp={stopPropagation}
+          ></button>
+          <>
+            <div
+              className={`active-circle circle-${activeIndex} circle-anim-${activeIndex}`}
+            ></div>
+            <div className={`line-vertical line-${activeIndex}`}></div>
+            <div className={`line-horizontal line-h-${activeIndex}`}></div>
+            <div className={`line-horizontal line-h-mid-${activeIndex}`}></div>
+            <div className={`line-vertical line-mid-${activeIndex}`}></div>
+          </>
+        </div>
+        <div className={`integration-description-container description-${activeIndex}`}>
+          <h3>{CONTENT[activeIndex].title}</h3>
+          <p>{CONTENT[activeIndex].description}</p>
+        </div>
       </div>
       <div className="integration-footer-container">
         <div className="integration-copyright">

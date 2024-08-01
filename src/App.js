@@ -168,23 +168,23 @@ function App() {
     preloadImages(imageUrls);
   }, []);
 
-  useEffect(() => {
-    const rootElement = rootRef.current;
-    rootElement.addEventListener("touchstart", handleTouchStart);
-    rootElement.addEventListener("touchmove", handleTouchMove);
-    rootElement.addEventListener("touchend", handleTouchEnd);
-    rootElement.addEventListener("mousedown", handleMouseDown);
-    rootElement.addEventListener("mousemove", handleMouseMove);
-    rootElement.addEventListener("mouseup", handleMouseUp);
-    return () => {
-      rootElement.removeEventListener("touchstart", handleTouchStart);
-      rootElement.removeEventListener("touchmove", handleTouchMove);
-      rootElement.removeEventListener("touchend", handleTouchEnd);
-      rootElement.removeEventListener("mousedown", handleMouseDown);
-      rootElement.removeEventListener("mousemove", handleMouseMove);
-      rootElement.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isSlidingActive, touchStartX, touchEndX]);
+  // useEffect(() => {
+  //   const rootElement = rootRef.current;
+  //   rootElement.addEventListener("touchstart", handleTouchStart);
+  //   rootElement.addEventListener("touchmove", handleTouchMove);
+  //   rootElement.addEventListener("touchend", handleTouchEnd);
+  //   rootElement.addEventListener("mousedown", handleMouseDown);
+  //   rootElement.addEventListener("mousemove", handleMouseMove);
+  //   rootElement.addEventListener("mouseup", handleMouseUp);
+  //   return () => {
+  //     rootElement.removeEventListener("touchstart", handleTouchStart);
+  //     rootElement.removeEventListener("touchmove", handleTouchMove);
+  //     rootElement.removeEventListener("touchend", handleTouchEnd);
+  //     rootElement.removeEventListener("mousedown", handleMouseDown);
+  //     rootElement.removeEventListener("mousemove", handleMouseMove);
+  //     rootElement.removeEventListener("mouseup", handleMouseUp);
+  //   };
+  // }, [isSlidingActive, touchStartX, touchEndX]);
 
   return (
     <div

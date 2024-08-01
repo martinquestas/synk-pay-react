@@ -75,14 +75,15 @@
 }
 
 .contact-footer-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   background-color: transparent;
   padding: 0px 20px;
   text-align: center;
-  width: 100%;
-  position: sticky;
-  transform: translateY(10vh);
-  bottom: 0;
+  z-index: 2;
 }
+
 .contact-item p, .contact-item-two p, .contact-item-three p {
   font-weight: 300;
   font-size: 20px;
@@ -137,7 +138,7 @@
   }
   .contact-footer-container{
     position: absolute;
-    bottom: 10px;
+    bottom: 80px;
     background-color: transparent;
   }
   .contact-footer-container p {
