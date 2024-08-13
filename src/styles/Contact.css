@@ -100,6 +100,15 @@
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1600px) {
+  .contact-page h2{
+    font-size: 40px;
+  }
+  .contact-page p{
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contact-main-wrapper {
     margin-top: -14vh;
