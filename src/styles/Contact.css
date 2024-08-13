@@ -29,7 +29,7 @@
 
 .contact-page {
   color: white;
-  margin-top: 220px;
+  margin-top: 10px;
   text-align: center;
   width: 670px;
   animation: slide-up 1s ease-out forwards;
@@ -75,35 +75,29 @@
 }
 
 .contact-footer-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   background-color: transparent;
   padding: 0px 20px;
   text-align: center;
-  width: 100%;
-  position: sticky;
-  transform: translateY(50px) ;
+  z-index: 2;
 }
+
 .contact-item p, .contact-item-two p, .contact-item-three p {
   font-weight: 300;
   font-size: 20px;
   margin-top: 10px;
 }
 
-.contact-footer-container .contact-copyright {
-  background-color: transparent;
-  color: #c5c5c5;
-  width: 100%;
-  font-family: "Prompt", sans-serif;
-  bottom: 0;
-
-}
-
-.contact-footer-container .contact-copyright p {
+.contact-footer-container p {
   background-color: transparent;
   font-family: "Prompt", sans-serif;
   font-weight: 500;
   text-align: center;
   font-size: 15px;
-  color: #c5c5c5;
+  color: white;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,10 +138,10 @@
   }
   .contact-footer-container{
     position: absolute;
-    bottom: 10px;
+    bottom: 80px;
     background-color: transparent;
   }
-  .contact-footer-container .contact-copyright p {
+  .contact-footer-container p {
     font-size: 12px;
   }
 }

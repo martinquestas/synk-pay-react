@@ -33,9 +33,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-footer-container">
-        <div className="contact-copyright">
-          <p>Powered by Novatide Labs</p>
-        </div>
+        <p>Powered by Novatide Labs</p>
       </div>
     </div>
   );
