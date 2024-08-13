@@ -187,6 +187,15 @@
   color: #c5c5c5;
 }
 
+@media screen and (min-width: 1600px) {
+  .solutions-header h2{
+    font-size: 40px;
+  }
+  .solutions-header p{
+    font-size: 23px;
+  }
+}
+
 @media  screen and (max-width: 768px) {
 
   .solutions-header {

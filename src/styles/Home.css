@@ -27,6 +27,7 @@ html, body {
   display: none;
 }
 
+
 .home-main-wrapper {
   background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
   height: 120vh;
@@ -126,6 +127,18 @@ div.footer-container {
   text-align: center;
   font-size: 15px;
   color: #c5c5c5;
+}
+
+@media screen and (min-width: 1600px) {
+  .home-page h2{
+    font-size: 40px;
+  }
+  .home-page p{
+    font-size: 25px;
+  }
+  .home-page-two p{
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {

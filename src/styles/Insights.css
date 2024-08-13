@@ -104,6 +104,15 @@ html, body {
   color: #c5c5c5;
 }
 
+@media screen and (min-width: 1600px) {
+  .insights-header h2{
+    font-size: 40px;
+  }
+  .insights-header p{
+    font-size: 25px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .insights-main-wrapper {
     margin-top: -27vh;

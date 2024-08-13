@@ -104,6 +104,15 @@
     color: #c5c5c5;
   }
 
+  @media screen and (min-width: 1600px) {
+    .compliance-header h2{
+      font-size: 40px;
+    }
+    .compliance-header p{
+      font-size: 23px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .compliance-main-wrapper {
       margin-top: -27vh;

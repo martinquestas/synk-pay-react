@@ -7,6 +7,10 @@
   }
 }
 
+.integration-header h4 {
+  display: none;
+}
+
 .integration-main-wrapper {
   background: linear-gradient(111deg, #0a0a0a 5.9%, #0a0a0a 97.91%);
   color: white;
@@ -395,6 +399,15 @@
   to {
     width: 350px;
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .integration-header h2{
+    font-size: 40px;
+  }
+  .integration-header p{
+    font-size: 25px;
   }
 }
 
