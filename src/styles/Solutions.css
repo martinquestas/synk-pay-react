@@ -110,6 +110,7 @@
   transform: translate(-50%, -50%);
   width: 90vw;
   height: auto;
+  margin-bottom: 5vw;
   margin-top: -50px;
   animation: fade-in 3s ease-out forwards;
 }
