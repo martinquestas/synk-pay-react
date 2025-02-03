@@ -21,7 +21,10 @@ const Contact = () => {
       <div className="contact-details">
         <div className="contact-item">
           <h3>Location</h3>
-          <p>Sherman, Calle Wallaby 42, Sidney</p>
+          <p>
+            Gedimino pr. 20, LT-01103 Vilnius,
+            <br /> the Republic of Lithuania
+          </p>
         </div>
         <div className="contact-item-two">
           <h3>Email</h3>
