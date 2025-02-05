@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
         <div className="contact-item-two">
           <h3>Email</h3>
-          <p>email@email.com</p>
+          <p>support@synkpay.io</p>
         </div>
         <div className="contact-item-three">
           <h3>Phone number</h3>
